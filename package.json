@@ -1,0 +1,21 @@
+{
+  "name": "11ty-image-optimization-talk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy-img": "^0.10.0",
+    "cheerio": "^1.0.0-rc.10"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "file:_eleventy/11ty-eleventy-1.0.0-canary.41.tgz"
+  }
+}

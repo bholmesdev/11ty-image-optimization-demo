@@ -1,0 +1,32 @@
+:root {
+  --content-max-width: 700px;
+}
+
+html {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  width: 100vw;
+}
+
+article {
+  max-width: var(--content-max-width);
+  margin: auto;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+}
+
+pre, code {
+  max-width: 100%;
+  overflow: scroll;
+}
