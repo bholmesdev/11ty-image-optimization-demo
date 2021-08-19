@@ -30,7 +30,6 @@ module.exports = function (eleventyConfig) {
         const $ = cheerio.load(html);
         
         if (data.tags?.includes('blog')) {
-          console.log(data.tags)
           await Promise.all([
             // loop over all the images in our document
             $('img').toArray().map(async (img) => {
