@@ -16,6 +16,6 @@
     "cheerio": "^1.0.0-rc.10"
   },
   "dependencies": {
-    "@11ty/eleventy": "file:_eleventy/11ty-eleventy-1.0.0-canary.41.tgz"
+    "@11ty/eleventy": "^1.0.0-beta.8"
   }
 }
