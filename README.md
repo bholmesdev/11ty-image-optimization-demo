@@ -6,7 +6,7 @@ The goal:
 1. Find all `img` tags in a given template
 2. Replace with an optimized `picture` element
 
-🚨 **Warning: this only works with the latest build of 11ty. It isn't even published yet!** This project is using a build of the latest 11ty, bundled under `_eleventy/11ty-eleventy-1.0.0-canary.41`. Once canary 42 is released, you can install that instead :)
+⚠️ **Note:** this only works in 11ty's latest v1.0 beta. You can install this by adding the `@beta` flag to your 11ty install: `npm i @11ty/eleventy@beta`
 
 ## Running and building
 
