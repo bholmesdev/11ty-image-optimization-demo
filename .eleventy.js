@@ -24,9 +24,9 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addExtension('md', {
     read: true,
-    compile(markdown) {
+    compile() {
       return async function render(data) {
-        const html = await this.defaultRenderer(markdown);
+        const html = await this.defaultRenderer(data);
         const $ = cheerio.load(html);
         
         if (data.tags?.includes('blog')) {
