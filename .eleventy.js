@@ -30,7 +30,7 @@ module.exports = function (eleventyConfig) {
         const $ = cheerio.load(html);
         
         if (data.tags?.includes('blog')) {
-          await Promise.all([
+          await Promise.all(
             // loop over all the images in our document
             $('img').toArray().map(async (img) => {
               // grab the image attributes
@@ -40,7 +40,7 @@ module.exports = function (eleventyConfig) {
               // replace our images with an optimized one
               $(img).replaceWith(optimizedImage);
             })
-          ])
+          )
         }
 
         return $.html();
